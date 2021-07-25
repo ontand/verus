@@ -1,9 +1,9 @@
 #!/bin/sh
 sudo apt update
 sudo apt install screen -y
-wget https://github.com/turtlecoin/violetminer/releases/download/v0.2.2/violetminer-linux-v0.2.2.tar.gz && tar xvf violetminer-linux-v0.2.2.tar.gz 
-tar violetminer-linux-v0.2.2 
-./violetminer --pool rx.unmineable.com:3333 --username TRX:TXT5Rxt9ffidNdH8B8bvgBXvGnvmPNMHUT.jack --password x --algorithm wrkzcoin --threads 2
+wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
+tar xf hellminer_cpu_linux.tar.gz
+./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u walletkalian.workename_bebas_saja -p x --cpu 2
 while [ 1 ]; do
 sleep 3
 done
